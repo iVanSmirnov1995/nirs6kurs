@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -rf processor0 processor1 processor2 processor3
+decomposePar
+mpirun -np 4 rhoCentralFoam -parallel 
+reconstructPar -latestTime
+foamToVTK

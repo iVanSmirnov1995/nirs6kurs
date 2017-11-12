@@ -23,7 +23,7 @@ boundaryField
     inlet
     {
         type            freestream;
-        freestreamValue           $internalField;
+        freestreamValue           101325;
     }
 
     outlet
@@ -34,16 +34,16 @@ boundaryField
     frontAndBack
     {
         type            freestream;
-        freestreamValue           $internalField;
+        freestreamValue           101325;
     }
 
     topAndBottom
     {
         type            freestream;
-        freestreamValue           $internalField;
+        freestreamValue           101325;
     }
 
-    bowl
+    kobra
     {
 	type            zeroGradient;
     }
@@ -51,14 +51,8 @@ boundaryField
 
     nozzle
     {
-        type totalPressure;
-	p0 uniform 5167575;// <- Is that the total pressure?
-	U U; 
-	//phi phi; 
-	//rho none; 
-	//psi none
-	value uniform 2917001.77;
-	gamma 1.4; 
+    type            fixedValue;
+	value uniform 101325;
     }
 
 }

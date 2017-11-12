@@ -24,7 +24,7 @@ boundaryField
     inlet
     {
         type            freestream;
-        freestreamValue           $internalField;
+        freestreamValue           uniform (400 0 0);
     }
 
     outlet
@@ -44,7 +44,7 @@ boundaryField
         freestreamValue           $internalField;
     }
 
-    bowl
+    kobra
     {
         type            fixedValue;
         value           uniform (0 0 0);
@@ -52,13 +52,8 @@ boundaryField
 
     nozzle
     {
-	type pressureDirectedInletVelocity ;
-	inletDirection uniform (1 0 0);
-	//U U; 
-	//phi phi; 
-	// none; 
-	//psi none;
-	value uniform (990.8560 0 0); 
+        type            fixedValue;
+        value           uniform (0 0 -800);
     }
 
 
