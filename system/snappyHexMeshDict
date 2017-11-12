@@ -49,8 +49,8 @@ castellatedMeshControls
 
     features // taken from STL from each .eMesh file created by "SurfaceFeatureExtract" command
     (
-        {file "kobra.eMesh"; level 7;} 
-        {file "nozzle.eMesh"; level 9;} 
+        {file "kobra.eMesh"; level 6;} 
+        {file "nozzle.eMesh"; level 8;} 
     );
 
     // Surface based refinement
@@ -59,7 +59,7 @@ castellatedMeshControls
     refinementSurfaces // Surface-wise min and max refinement level
     {
 	nozzle {level (0 0);} // was 4 4
-	kobra {level (6 6);}
+	kobra {level (5 5);}
  // was 4 4
     }  
 
@@ -68,7 +68,7 @@ castellatedMeshControls
         cylinder
         {
             mode inside;
-            levels ((6 6));
+            levels ((5 5));
         }
         kobraFull
         {
