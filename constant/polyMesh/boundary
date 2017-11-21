@@ -20,40 +20,40 @@ FoamFile
     topAndBottom
     {
         type            patch;
-        nFaces          800;
-        startFace       2050986;
+        nFaces          3200;
+        startFace       684559;
     }
     inlet
     {
         type            patch;
-        nFaces          400;
-        startFace       2051786;
+        nFaces          1600;
+        startFace       687759;
     }
     outlet
     {
         type            patch;
-        nFaces          412;
-        startFace       2052186;
+        nFaces          1600;
+        startFace       689359;
     }
     frontAndBack
     {
         type            patch;
-        nFaces          800;
-        startFace       2052598;
+        nFaces          3200;
+        startFace       690959;
     }
     nozzle
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          733;
-        startFace       2053398;
+        nFaces          278;
+        startFace       694159;
     }
     kobra
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          106687;
-        startFace       2054131;
+        nFaces          27936;
+        startFace       694437;
     }
 )
 
